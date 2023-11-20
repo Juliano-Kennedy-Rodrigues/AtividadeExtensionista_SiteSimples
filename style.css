@@ -1,0 +1,152 @@
+.todosBts {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bt {
+    position: relative;
+    background-color: #205340;
+    border: 2px solid #205340c2;
+    border-radius: 5px;
+    height: 40px;
+    width: 350px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .bt:after {
+    content: "";
+    background: #90ee9077;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .bt:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  .botoes {
+    float: right;
+    margin-left: 10px;
+  }
+
+  .btInfo {
+    position: relative;
+    background-color: #205340;
+    border: 2px solid #205340c2;
+    border-radius: 5px;
+    height: 40px;
+    width: 180px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .btInfo:after {
+    content: "";
+    background: #90ee9077;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btInfo:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+ 
+  /* acabou os botoes/
+
+  /*COMEÇANDO SECION PRINCIPAL*/
+
+  .principal {
+    background-color: rgb(171, 222, 176);
+    margin-top: 50px;
+    height: 330px;
+    width: 95%;
+    position: relative;
+    left: 2%;
+
+  }
+
+
+  .tituloDiv{
+    background-color: #205340;
+    border: 2px solid #205340c2;
+    border-radius: 10px;
+    height: 40px;
+    width: 350px;
+    text-align: center;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 20px;
+    position: relative;
+    top: 3%;
+    left: 20%;
+    transform: translate(-50%, 15%);
+  }
+
+  .txt {
+    position: relative;
+    top: 3%;
+    left: 20%;
+    transform: translate(-27%, 20%);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    height: 40px;
+    width: 50%;
+  }
+
+  .img {
+    background-color: #205340;
+    border: 2px solid #20534080;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 250px;
+    width: 280px;
+    position: inherit;
+    top: -33%;
+    left: 73%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.imagemDireita {
+
+    height: 250px;
+    width: 250px;
+    
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
