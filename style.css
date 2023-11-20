@@ -150,3 +150,51 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
+/* ACABOU O BABADO PRINCIPAL */
+
+/*COMÇANDO DIVS DAS LATAS DE LIXO */
+
+.latas {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#latas {
+  float: right;
+  margin-left: 10px;
+  border: 2px solid #20534080;
+  border-radius: 10px;
+  border-radius: 10px;
+  height: 250px;
+  width: 280px;
+  position: relative;
+  top: -50%;
+  left: -8%;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.lixeira{
+  height: 250px;
+  width: 250px;
+  padding-left: 18px;
+}
+
+.azul {
+  background-color: #3BA2B9;
+}
+
+.vermelho {
+  background-color: #B61212;
+}
+
+.amarelo {
+  background-color: #D2D62E;
+}
+
+.verde {
+  background-color: #419854;
+}
