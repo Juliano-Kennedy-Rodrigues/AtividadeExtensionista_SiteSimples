@@ -1,3 +1,5 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 body {
     background-color: #064580;
 }
@@ -181,3 +183,28 @@ body {
     top: 28px;
     left: 4%;
   }
+
+  .quadradoInfo{
+    position: relative;
+    float: right;
+    right: 7%;
+    top: -320px;
+    background-color: #83BDF3;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 15%;
+    height: 25%;
+    padding: 5px;
+  }
+
+  .fotoEx {
+    height: 15%;
+    width: 15%;
+    left: 5%;
+    top: -320px;
+    z-index: 1;
+    position:relative;
+}
