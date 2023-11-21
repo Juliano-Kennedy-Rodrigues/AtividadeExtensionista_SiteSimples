@@ -1,8 +1,12 @@
+body {
+    background-color: #064580;
+}
+
 .rectangle {
-  background-color: rgb(171, 222, 176);
-  top: -15%;
-  height: 80px;
-  padding-top: 2px;
+    background-color: #B2E1EC;
+    top: -15%;
+    height: 80px;
+    padding-top: 2px;
 }
 
 .todosBts {
@@ -13,8 +17,8 @@
 
 .bt {
     position: relative;
-    background-color: #205340;
-    border: 2px solid #205340c2;
+    background-color: #3BA2B9;
+    border: 2px solid #3ba2b9dc;
     border-radius: 5px;
     height: 40px;
     width: 350px;
@@ -30,7 +34,7 @@
 
   .bt:after {
     content: "";
-    background: #90ee9077;
+    background: #3BA2B9;
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -55,8 +59,8 @@
 
   .btInfo {
     position: relative;
-    background-color: #205340;
-    border: 2px solid #205340c2;
+    background-color: #3BA2B9;
+    border: 2px solid #3ba2b9dc;
     border-radius: 5px;
     height: 40px;
     width: 180px;
@@ -72,7 +76,7 @@
 
   .btInfo:after {
     content: "";
-    background: #90ee9077;
+    background: #3BA2B9;
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -89,13 +93,11 @@
     opacity: 1;
     transition: 0s
   }
- 
-  /* acabou os botoes/
 
-  /*COMEÇANDO SECION PRINCIPAL*/
+  /* section principal */
 
   .principal {
-    background-color: rgb(171, 222, 176);
+    background-color:#B2E1EC;
     margin-top: 50px;
     height: 330px;
     width: 95%;
@@ -106,8 +108,8 @@
 
 
   .tituloDiv{
-    background-color: #205340;
-    border: 2px solid #205340c2;
+    background-color: #3BA2B9;
+    border: 2px solid #3ba2b9dc;
     border-radius: 10px;
     height: 40px;
     width: 350px;
@@ -134,8 +136,8 @@
   }
 
   .img {
-    background-color: #205340;
-    border: 2px solid #20534080;
+    background-color: #3BA2B9;
+    border: 2px solid #3ba2b9dc;
     border-radius: 10px;
     border-radius: 10px;
     height: 250px;
@@ -148,60 +150,34 @@
 }
 
 .imagemDireita {
-
+    padding-left: 8px;
     height: 250px;
     width: 250px;
-    
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 }
 
-/* ACABOU O BABADO PRINCIPAL */
-
-/*COMÇANDO DIVS DAS LATAS DE LIXO */
-
-.latas {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+.infoRectangle{
+    background-color: #83BDF3;
+    border-radius: 10px;
+    position: relative;
+    bottom: 160px;
+    left: 20%;
+    height: 100px;
+    width: 50%;
+    text-align: left;
+    padding-top: 1%;
+    padding-left: 2%;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
 }
 
-#latas {
-  float: right;
-  margin-left: 10px;
-  border: 2px solid #20534080;
-  border-radius: 10px;
-  border-radius: 10px;
-  height: 250px;
-  width: 280px;
-  position: relative;
-  top: -50%;
-  left: -8%;
-  text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
-}
-
-.lixeira{
-  height: 250px;
-  width: 250px;
-  padding-left: 18px;
-}
-
-.azul {
-  background-color: #3BA2B9;
-}
-
-.vermelho {
-  background-color: #B61212;
-}
-
-.amarelo {
-  background-color: #D2D62E;
-}
-
-.verde {
-  background-color: #419854;
-}
+.dot {
+    height: 250px;
+    width: 250px;
+    background-color: #83BDF3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 28px;
+    left: 4%;
+  }

@@ -7,17 +7,25 @@ btAzul.onclick = function myFunction() {
 var btVerm = document.getElementById('btVermelho')
 
 btVerm.onclick = function myFunction() {
-    alert('clicou verm');
+  location.href="outrasPags/lixoVermelho.html"
   }
 
 var btAmar = document.getElementById('btAmarelo')
 
 btAmar.onclick = function myFunction() {
-    alert('clicou amarelo');
+  location.href="outrasPags/lixoAmarelo.html"
   }
 
 var btVerde = document.getElementById('btVerde')
 
 btVerde.onclick = function myFunction() {
-    alert('clicou verde');
+  location.href="outrasPags/lixoVerde.html"
   }
+
+var telaInicial =document.getElementById('inicio')
+
+telaInicial.onclick = function vaiInicio() {
+  location.href="/index.html"
+}
+
+//location.href="/index.html"
