@@ -1,27 +1,29 @@
-.rectangle {
-  background-color: rgb(171, 222, 176);
-  top: -15%;
-  height: 80px;
-  padding-top: 2px;
-}
+@media only screen and (min-width: 734px) {
+  .rectangle {
+    background-color: rgb(171, 222, 176);
+    top: -15%;
+    height: 80px;
+    padding-top: 2px;
+  }
 
-.todosBts {
+  .todosBts {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
-}
+  }
 
-.bt {
+  .bt {
     position: relative;
     background-color: #205340;
     border: 2px solid #205340c2;
     border-radius: 5px;
     height: 40px;
-    width: 350px;
+    width: 20%;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
@@ -35,12 +37,12 @@
     position: absolute;
     padding-top: 300%;
     padding-left: 350%;
-    margin-left: -20px!important;
+    margin-left: -20px !important;
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
   }
-  
+
   .bt:active:after {
     padding: 0;
     margin: 0;
@@ -61,9 +63,10 @@
     height: 40px;
     width: 180px;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
@@ -77,35 +80,34 @@
     position: absolute;
     padding-top: 300%;
     padding-left: 350%;
-    margin-left: -20px!important;
+    margin-left: -20px !important;
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
   }
-  
+
   .btInfo:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
   }
- 
+
   /* acabou os botoes/
 
-  /*COMEÇANDO SECION PRINCIPAL*/
+  /*COMEÇANDO SECTION PRINCIPAL*/
 
   .principal {
     background-color: rgb(171, 222, 176);
     margin-top: 50px;
-    height: 330px;
+    height: 400px;
     width: 95%;
     position: relative;
-    left: 2%;
-
+    left: 50px;
+    right: 100px;
   }
 
-
-  .tituloDiv{
+  .tituloDiv {
     background-color: #205340;
     border: 2px solid #205340c2;
     border-radius: 10px;
@@ -113,21 +115,26 @@
     width: 350px;
     text-align: center;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 20px;
-    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 2%;
+    position: absolute;
     top: 3%;
-    left: 20%;
+    left: 27%;
     transform: translate(-50%, 15%);
   }
 
+  .tituloDiv,
+  h1 {
+    padding-bottom: 35px;
+  }
+
   .txt {
-    position: relative;
-    top: 3%;
+    position: absolute;
+    top: 30%;
     left: 20%;
     transform: translate(-27%, 20%);
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     height: 40px;
     width: 50%;
@@ -138,70 +145,345 @@
     border: 2px solid #20534080;
     border-radius: 10px;
     border-radius: 10px;
-    height: 250px;
-    width: 280px;
-    position: inherit;
-    top: -33%;
+    height: 50%;
+    width: 20%;
+    position: absolute;
+    top: 20%;
     left: 73%;
     padding-left: 20px;
     padding-top: 20px;
-}
+    bottom: 25%;
+  }
 
-.imagemDireita {
-
-    height: 250px;
-    width: 250px;
-    
+  .imagemDireita {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    bottom: 10px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+  }
+
+  /* ACABOU O BABADO PRINCIPAL */
+
+  /*COMÇANDO DIVS DAS LATAS DE LIXO */
+
+  .latas {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #latas {
+    float: left;
+    margin-left: 10px;
+    border: 2px solid #20534080;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 20%;
+    width: 20%;
+    position: relative;
+    top: 70%;
+    left: 8.5%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+    bottom: 10px;
+  }
+
+  .lixeira {
+    position: inherit;
+    left: 0%;
+    height: 50%;
+    width: 50%;
+    padding-left: 18px;
+  }
+
+  .lixeira,
+  p {
+    top: 10%;
+  }
+
+  .azul {
+    background-color: #3BA2B9;
+  }
+
+  .vermelho {
+    background-color: #B61212;
+  }
+
+  .amarelo {
+    background-color: #D2D62E;
+  }
+
+  .verde {
+    background-color: #419854;
+  }
 }
 
-/* ACABOU O BABADO PRINCIPAL */
 
-/*COMÇANDO DIVS DAS LATAS DE LIXO */
+/*reatividade para dispositivos móveis*/
 
-.latas {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
-#latas {
-  float: right;
-  margin-left: 10px;
-  border: 2px solid #20534080;
-  border-radius: 10px;
-  border-radius: 10px;
-  height: 250px;
-  width: 280px;
-  position: relative;
-  top: -50%;
-  left: -8%;
-  text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
-}
 
-.lixeira{
-  height: 250px;
-  width: 250px;
-  padding-left: 18px;
-}
 
-.azul {
-  background-color: #3BA2B9;
-}
 
-.vermelho {
-  background-color: #B61212;
-}
 
-.amarelo {
-  background-color: #D2D62E;
-}
 
-.verde {
-  background-color: #419854;
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 733px) {
+  .rectangle {
+    background-color: rgb(171, 222, 176);
+    top: -15%;
+    height: 20%;
+    padding-top: 2px;
+    width: 95%;
+    right: -15%;
+    padding-top: 2px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25%;
+    right: 10%;
+  }
+
+  .todosBts {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .bt {
+    position: relative;
+    background-color: #205340;
+    border: 2px solid #205340c2;
+    border-radius: 5px;
+    height: 40px;
+    width: 48%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 2px;
+    left: 10px;
+  }
+
+  .bt:after {
+    content: "";
+    background: #90ee9077;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+
+  .bt:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  .botoes {
+    float: center;
+    margin-left: 10px;
+  }
+
+  .btInfo {
+    position: relative;
+    background-color: #205340;
+    border: 2px solid #205340c2;
+    border-radius: 5px;
+    height: 40px;
+    width: 50%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 2px;
+  }
+
+  .btInfo:after {
+    content: "";
+    background: #90ee9077;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+  .btInfo:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  /* acabou os botoes/
+  /*COMEÇANDO SECTION PRINCIPAL*/
+
+  .principal {
+    background-color: rgb(171, 222, 176);
+    margin-top: 50px;
+    height: 400px;
+    width: 95%;
+    position: relative;
+    left: 50px;
+    right: 100px;
+  }
+
+  .tituloDiv {
+    background-color: #205340;
+    border: 2px solid #205340c2;
+    border-radius: 10px;
+    height: 5%;
+    width: 20%;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 2%;
+    position: absolute;
+    top: 3%;
+    left: 27%;
+    transform: translate(-50%, 15%);
+  }
+
+  .tituloDiv,
+  h1 {
+    padding-bottom: 35px;
+    font-size: 18px;
+  }
+
+  .txt {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-27%, 20%);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    height: 5%;
+    width: 50%;
+  }
+
+  .img {
+    background-color: #205340;
+    border: 2px solid #20534080;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 50%;
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    left: 73%;
+    padding-left: 20px;
+    padding-top: 20px;
+    bottom: 25%;
+  }
+
+  .imagemDireita {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    bottom: 10px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  /* ACABOU O BABADO PRINCIPAL */
+
+  /*COMÇANDO DIVS DAS LATAS DE LIXO */
+
+  .latas {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0%;
+  }
+
+  #latas {
+    float: left;
+    margin-left: 10px;
+    border: 2px solid #20534080;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 20%;
+    width: 20%;
+    position: relative;
+    top: 70%;
+    left: 8.5%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+    bottom: 10px;
+
+  }
+
+  .lixeira {
+    position: inherit;
+    left: 0%;
+    height: 50%;
+    width: 50%;
+    padding-left: 18px;
+  }
+
+  .lixeira,
+  p {
+    top: 10%;
+  }
+
+  .azul {
+    background-color: #3BA2B9;
+  }
+
+  .vermelho {
+    background-color: #B61212;
+  }
+
+  .amarelo {
+    background-color: #D2D62E;
+  }
+
+  .verde {
+    background-color: #419854;
+  }
 }

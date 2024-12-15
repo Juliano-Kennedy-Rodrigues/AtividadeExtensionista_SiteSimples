@@ -1,33 +1,40 @@
-html, body {margin: 0; height: 100%; overflow: hidden}
-
+html,
 body {
-    background-color: #064580;
+  margin: 0;
+  height: 100%;
+  overflow: hidden
 }
 
-.rectangle {
+body {
+  background-color: #064580;
+}
+
+@media only screen and (min-width: 734px) {
+  .rectangle {
     background-color: #B2E1EC;
     top: -15%;
     height: 80px;
     padding-top: 2px;
-}
+  }
 
-.todosBts {
+  .todosBts {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
-}
+  }
 
-.bt {
+  .bt {
     position: relative;
     background-color: #3BA2B9;
     border: 2px solid #3ba2b9dc;
     border-radius: 5px;
     height: 40px;
-    width: 350px;
+    width: 20%;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
@@ -41,12 +48,12 @@ body {
     position: absolute;
     padding-top: 300%;
     padding-left: 350%;
-    margin-left: -20px!important;
+    margin-left: -20px !important;
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
   }
-  
+
   .bt:active:after {
     padding: 0;
     margin: 0;
@@ -67,9 +74,10 @@ body {
     height: 40px;
     width: 180px;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
@@ -83,12 +91,12 @@ body {
     position: absolute;
     padding-top: 300%;
     padding-left: 350%;
-    margin-left: -20px!important;
+    margin-left: -20px !important;
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
   }
-  
+
   .btInfo:active:after {
     padding: 0;
     margin: 0;
@@ -96,20 +104,22 @@ body {
     transition: 0s
   }
 
-  /* section principal */
 
+  /* acabou os botoes/
+
+
+  /* section principal */
   .principal {
-    background-color:#B2E1EC;
+    background-color: #B2E1EC;
     margin-top: 50px;
-    height: 330px;
+    height: 400px;
     width: 95%;
     position: relative;
-    left: 2%;
-
+    left: 50px;
+    right: 100px;
   }
 
-
-  .tituloDiv{
+  .tituloDiv {
     background-color: #3BA2B9;
     border: 2px solid #3ba2b9dc;
     border-radius: 10px;
@@ -117,21 +127,26 @@ body {
     width: 350px;
     text-align: center;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 20px;
-    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 2%;
+    position: absolute;
     top: 3%;
-    left: 20%;
+    left: 27%;
     transform: translate(-50%, 15%);
   }
 
+  .tituloDiv,
+  h1 {
+    padding-bottom: 35px;
+  }
+
   .txt {
-    position: relative;
-    top: 3%;
+    position: absolute;
+    top: 30%;
     left: 20%;
     transform: translate(-27%, 20%);
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     height: 40px;
     width: 50%;
@@ -142,22 +157,29 @@ body {
     border: 2px solid #3ba2b9dc;
     border-radius: 10px;
     border-radius: 10px;
-    height: 250px;
-    width: 280px;
-    position: inherit;
-    top: -33%;
+    height: 50%;
+    width: 20%;
+    position: absolute;
+    top: 20%;
     left: 73%;
     padding-left: 20px;
     padding-top: 20px;
-}
+    bottom: 25%;
+  }
 
-.imagemDireita {
-    padding-left: 8px;
-    height: 250px;
-    width: 250px;
-}
+  .imagemDireita {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    bottom: 10px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
 
-.infoRectangle{
+  .infoRectangle {
     background-color: #83BDF3;
     border-radius: 10px;
     position: relative;
@@ -169,42 +191,70 @@ body {
     padding-top: 1%;
     padding-left: 2%;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-}
+  }
 
-.dot {
-    height: 250px;
-    width: 250px;
+
+
+
+  /*ARRUMAR*/
+  .controle{
+    position: relative;
+    top: -1%;
+  }
+
+  .dot {
+    height: 120%;
+    width: 17%;
     background-color: #83BDF3;
     border-radius: 50%;
     display: inline-block;
-    position: relative;
-    top: 28px;
-    left: 4%;
+    position: absolute;
+    top: 23%;
+    left: 5%;
   }
 
-  .quadradoInfo{
-    position: relative;
+  .quadradoInfo {
+    position: absolute;
     float: right;
     right: 7%;
-    top: -320px;
+    top: 45%;
     background-color: #83BDF3;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 18px;
     border-radius: 10px;
     width: 15%;
-    height: 25%;
+    height: 118%;
     padding: 5px;
   }
 
   .fotoEx {
-    height: 15%;
-    width: 15%;
-    left: 5%;
-    top: -320px;
+    height: 10%;
+    width: 10%;
+    left: 8%;
+    top: 35px;
     z-index: 1;
-    position:relative;
+    position: relative;
+  }
+
+  .infoRectangle{
+    position: absolute;
+    top: 55%;
+    height: 55%;
+    left: 8%;
+  }
+
+  .infoRectangle p{
+    width: -10%;
+    height: -10%;
+    display: flex;
+    float: center;
+    padding-left: 25%;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
