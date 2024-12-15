@@ -11,7 +11,7 @@ Site simples e interativo que dispões alguumas informações sobre coleta de li
 
 ## Documentação
 
-- [Documentação](https://github.com/Juliano-Kennedy-Rodrigues/AtividadeExtensionista_SiteSimples/tree/master)
+- [Documentação](https://docs.google.com/presentation/d/1kkEmNHo85Or3WrnLMLWbLh-TympnE92S_kAtOa8h8Tw/edit?usp=sharing)
 
 
 ## Objetivos
